@@ -15,6 +15,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants;
 import frc.robot.Constants.OIConstants;
+import jdk.internal.jshell.tool.resources.l10n;
 
 import java.util.EnumMap;
 
@@ -68,9 +69,9 @@ public class StorageSubsystem extends SubsystemBase {
     //private final boolean m_closedloop = true; // True = Position Control, Flase = PT
 
     public boolean sensor[] = new boolean[3];         //TODO: CHECK HOW MANY SENSORS
-    private static final DigitalInput m_Sensor1 = new DigitalInput(0);
-    private static final DigitalInput m_Sensor2 = new DigitalInput(1);
-    private static final DigitalInput m_Sensor3 = new DigitalInput(2);
+    private static DigitalInput m_Sensor1 = new DigitalInput(0);
+    private static DigitalInput m_Sensor2 = new DigitalInput(1);
+    private static DigitalInput m_Sensor3 = new DigitalInput(2);
     
 
 
@@ -234,6 +235,9 @@ public class StorageSubsystem extends SubsystemBase {
     m_doArm = false; //TODO:
     m_doShoot = false;
     //m_shootButtonPressed = false;
+    sensor[0] = m_Sensor1.get();
+    sesnor[1] = m_Sesnor2.get();
+    sesnor[2] = m_sensor3.get();
   }
 
   private void runBeltSm() {
