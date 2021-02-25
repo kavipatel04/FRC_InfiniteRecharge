@@ -69,9 +69,9 @@ public class StorageSubsystem extends SubsystemBase {
     //private final boolean m_closedloop = true; // True = Position Control, Flase = PT
 
     public boolean sensor[] = new boolean[3];         //TODO: CHECK HOW MANY SENSORS
-    private static DigitalInput m_Sensor1 = new DigitalInput(0);
-    private static DigitalInput m_Sensor2 = new DigitalInput(1);
-    private static DigitalInput m_Sensor3 = new DigitalInput(2);
+    private static DigitalInput m_Sensor1 = new DigitalInput(10);
+    private static DigitalInput m_Sensor2 = new DigitalInput(11);
+    private static DigitalInput m_Sensor3 = new DigitalInput(12);
     
 
 
